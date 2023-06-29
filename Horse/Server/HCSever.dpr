@@ -20,8 +20,10 @@ begin
     end);
 
   THorse.Listen(9000,
-    procedure(Horse: THorse)
+    procedure //(Horse: THorse)
+    var
+      Horse: THorse;
     begin
-      Writeln('Server está rodando na porta ' + IntToStr(Horse.Port));
+      Writeln('Servidor está rodando na porta ' + IntToStr(Horse.Port));
     end);
 end.
